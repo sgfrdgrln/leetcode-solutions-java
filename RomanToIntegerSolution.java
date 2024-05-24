@@ -46,14 +46,13 @@ public class RomanToIntegerSolution {
         for(int i = 1; i < s.length(); i++) {
             int next = convertToInteger(s.charAt(i));
             
-            if(current < next) 
-                
+            if(current < next) {
                 sum -= current;
-            
-            else 
+            }
+            else {
                 sum += current;
-                
-                current = next;
+            }
+             current = next;
             
         }
         sum += current;
